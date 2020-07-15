@@ -87,6 +87,7 @@ main::before{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
 .broj{
     padding: 15px;
     font-size: 20px;
