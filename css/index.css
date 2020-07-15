@@ -72,7 +72,7 @@ main{
     background-image: url('../imgs/pozadina.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
     padding: 100px 0 0 0;
     background-color: white;
     /* height: 1500px; */
