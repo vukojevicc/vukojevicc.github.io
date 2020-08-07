@@ -69,12 +69,13 @@ header .navigation a li{
     height: 100%;
 }
 main{
-    background-image: url(../imgs/pozadina.png);
+    background-image: url('../imgs/pozadina.png');
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     padding: 100px 0 0 0;
     background-color: white;
+    /* height: 1500px; */
 }
 .broj{
     padding: 15px;
@@ -128,8 +129,8 @@ footer{
     text-align: center;
 }
 .footnav img{
-    height: 100%;
-    padding: 5px 0;
+    height: 59%;
+    padding-top: 2px;
 }
 .footnav p{
     margin-top: -2.5px;
