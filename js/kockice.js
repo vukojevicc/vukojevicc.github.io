@@ -1,5 +1,5 @@
 var dugme = document.getElementById("dugme");
-dugme.addEventListener("mouseover", function(){
+dugme.addEventListener("touchstart", function(){
     for(i=0; i<document.getElementsByClassName("kocka").length; i++){
         var j = document.getElementsByClassName("kocka")[i];
         var broj = Math.floor(Math.random()*6)+1;
@@ -77,7 +77,7 @@ dugme.addEventListener("mouseover", function(){
         }
     }
 });
-dugme.addEventListener("mouseleave", function(){
+dugme.addEventListener("touchend", function(){
     var strKocki = document.getElementsByClassName("kocka");    
     for(var j = 0; j<strKocki.length; j++){
         var nizKlasa = strKocki[j].classList;
