@@ -1,5 +1,13 @@
 var dugme = document.getElementById("dugme");
-dugme.addEventListener("touchstart", function(){
+dugme.addEventListener("click", function(){
+        var strKocki = document.getElementsByClassName("kocka");    
+        for(var j = 0; j<strKocki.length; j++){
+            var nizKlasa = strKocki[j].classList;
+            nizKlasa.remove("kocka1", "kocka2", "kocka3", "kocka4", "kocka5", "kocka6");
+            while(strKocki[j].firstChild){
+            strKocki[j].removeChild(strKocki[j].firstChild);
+            }
+        }
     for(i=0; i<document.getElementsByClassName("kocka").length; i++){
         var j = document.getElementsByClassName("kocka")[i];
         var broj = Math.floor(Math.random()*6)+1;
@@ -77,16 +85,7 @@ dugme.addEventListener("touchstart", function(){
         }
     }
 });
-dugme.addEventListener("touchend", function(){
-    var strKocki = document.getElementsByClassName("kocka");    
-    for(var j = 0; j<strKocki.length; j++){
-        var nizKlasa = strKocki[j].classList;
-        nizKlasa.remove("kocka1", "kocka2", "kocka3", "kocka4", "kocka5", "kocka6");
-        while(strKocki[j].firstChild){
-        strKocki[j].removeChild(strKocki[j].firstChild);
-        }
-    }
-});
+
 
 
 
